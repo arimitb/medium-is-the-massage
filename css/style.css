@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.content {
+    font: serif;
+    font-size: 10rem;
+    text-shadow: 0 0 4rem rgba(0, 0, 255, 1);
+    filter: blur(3px);
+}
+
+.content img {
+    width: 100vw;
+    animation: img-in-anim 0.5s linear;
+}
+
+@keyframes img-in-anim {
+    0% {
+        transform: scale(0) rotate(540deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
